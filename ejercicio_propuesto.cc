@@ -5,6 +5,12 @@ int main () {
 <<<<<<< HEAD
     
 }
+int ConsultarSaldo(int saldo) 
+{
+    std::cout << "Su saldo actual es: "<< saldo << std::endl;
+    std::cout << "Gracias por utilizar el cajero automatico AhorraMas" << std::endl;
+    return saldo;
+}
 void Deposito (float &saldo, float monto){
     float monto;
 
@@ -30,3 +36,19 @@ void Retiro(float *saldo, float monto) {
     *saldo -= monto;
 }
 >>>>>>> Rama-Mateo
+Cuenta cuenta;
+
+    cuenta.saldo = 1000;
+
+    std::cout << "Que desea hacer en la cuenta?" << std::endl;
+    std::cout << "Ver saldo de la cuenta? (1)" << std::endl;
+    std::cout << "Deposito en la cuenta? (2)" << std::endl;
+    std::cout << "Retiro de la cuenta? (3)" << std::endl;
+
+
+
+    std::cout << "Haciendo un monto:" << std::endl;
+    Retiro(cuenta.saldo);
+
+
+    return 0;

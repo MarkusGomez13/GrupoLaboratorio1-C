@@ -1,6 +1,8 @@
 #include <iostream>
 
+void Retiro(float *saldo, float monto);
 int main () {
+<<<<<<< HEAD
     
 }
 void Deposito (float &saldo, float monto){
@@ -22,3 +24,9 @@ void Deposito (float &saldo, float monto){
 
 
 
+=======
+
+void Retiro(float *saldo, float monto) {
+    *saldo -= monto;
+}
+>>>>>>> Rama-Mateo
